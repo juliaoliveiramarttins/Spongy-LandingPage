@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="src/styles/styles.css">
+    <link rel="stylesheet" href="src/styles/header.css">
+    <link rel="stylesheet" href="src/styles/home.css">
+    <link rel="stylesheet" href="src/styles/launch.css">
+
+    <title>Spongy</title>
+
+</head>
+
+<body>
+    <header>
+        <nav id="navbar">
+            <img src="src/images/logo.png" alt="">
+
+            <ul id="nav_list">
+                <li class="nav-item active">
+                    <a href="#home">Início</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#newproducts">Lançamento</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#feedbacks">Avaliações</a>
+                </li>
+            </ul>
+
+            <button class="btn-default">
+                Comprar
+            </button>
+
+            <button id="mobile_btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </nav>
+
+        <div id="mobile_menu">
+            <ul id="mobile_nav_list">
+                <li class="nav-item">
+                    <a href="#home">Início</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#newproducts">Lançamento</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#feedbacks">Avaliações</a>
+                </li>
+            </ul>
+            <button class="btn-default">
+                Peça aqui
+            </button>
+        </div>
+    </header>
+
+    <main id="content">
+        <section id="home">
+            <div class="shape"></div>
+
+            <div id="cta">
+                <div class="sponge">
+                    <img src="src/images/esponjas.png" alt="">
+                </div>
+
+                <h1 class="title">
+                    A pele perfeita começa com a <span>esponja</span> perfeita!
+                </h1>
+
+                <p class="description">
+                    Experimente agora e transforme sua maquiagem com a esponja que oferece suavidade, conforto e um
+                    acabamento impecável!
+                </p>
+
+                <div id="cta_buttons">
+                    <a href="" class="btn-default">
+                        Ver mais
+                    </a>
+
+                    <a href="tel:+55555555" id="phone_button" class="phone-text">
+                        <button class="btn-default">
+                            <i class="fa-solid fa-phone"> </i>
+                        </button>
+                        (11) 94002-8922
+                    </a>
+                </div>
+
+                <div class="social-media-buttons">
+                    <a href="">
+                        <i class="fa-brands fa-whatsapp" id="#icon1"></i>
+                    </a>
+
+                    <a href="">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="">
+                        <i class="fa-brands fa-tiktok"></i>
+                    </a>
+                </div>
+            </div>
+
+
+            <div id="banner">
+                <div class="sponges-banner">
+                    <img src="src/images/esponjas-banner.png" alt="">
+                </div>
+                <img src="src/images/mulher-banner.png" alt="mão segurando esponja">
+            </div>
+
+        </section>
+
+        <section id="newproducts">
+            <div class="shape2"></div>
+        
+            <div class="specifications-list">
+
+                <!-- <ul>
+                                    <h2>Spongy ProBlend</h2>
+
+                    <li><strong>Suavidade:</strong> Toque suave na pele, proporcionando uma aplicação delicada.</li>
+                    <li><strong>Acabamento Perfeito:</strong> Resultados suaves, uniformes e de aspecto profissional.</li>
+                    <li><strong>Durabilidade:</strong> Material de alta qualidade para uso prolongado.</li>
+                    <li><strong>Versatilidade:</strong> Ideal para aplicar base, corretivo e outros produtos de maquiagem.</li>
+                    <li><strong>Fácil de Limpar:</strong> Prática de lavar e manter, garantindo uso repetido sem desgaste.</li>
+                </ul>
+            </div>!--> 
+
+               
+            <div id="ol-img">
+                
+                <img src="src/images/esponja-lancamento.png" alt="">
+                <div id="info-img">
+                <h2>Spongy - ProBlend</h2>
+                <p>R$ 12,99</p>
+                </div>
+            </div>
+            
+            <ol>
+                
+            <li style="--accent-color: #E04C85">
+                <div class="icon"><i class="fa-light fa-feather"></i></div>
+                <div class="title2">Suavidade</div>
+                <div class="descr"> Toque suave na pele, proporcionando uma aplicação delicada.</div>
+            </li>
+            <li style="--accent-color: #E04C85">
+                <div class="icon"><i class="fa-light fa-star"></i></div>
+                <div class="title2">Acabamento Perfeito</div>
+                <div class="descr">Resultados suaves, uniformes e de aspecto profissional.</div>
+            </li>
+            <li style="--accent-color: #E04C85">
+                <div class="icon"><i class="fa-light fa-sync"></i></div>
+                <div class="title2">Versatilidade</div>
+                <div class="descr">Ideal para aplicar base, corretivo e outros produtos de maquiagem.</div>
+            </li>
+            <li style="--accent-color: #E04C85">
+                <div class="icon"><i class="fa-light fa-shield-alt"></i></div>
+                <div class="title2">Durabilidade</div>
+                <div class="descr">Prática de lavar e manter, garantindo uso repetido sem desgaste.</div>
+            </li>
+            </ol>
+
+            
+        </section>
+
+
+    </main>
+
+    <script src="src/javascript/scripts.js"></script>
+</body>
+</html>

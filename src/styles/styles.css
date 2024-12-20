@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+html{
+    scroll-behavior: smooth;
+}
+*{
+    font-family: 'poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+   
+    background: linear-gradient(135deg, #F5F5DC, #FFD3E7);
+}
+
+
+
+.btn-default{
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(224, 76, 133);
+    color: white;
+    border-radius: 65px;
+    padding: 12px 20px;
+    font-weight: 600;
+    box-shadow: 0 0 10px 2px rgba(146, 115, 128, 0.7);
+    cursor: pointer;
+    transition: background-color .2s ease;
+}
+
+.btn-default:hover{
+   /* background-color: rgb(201, 136, 161);*/
+   background-color: rgb(226, 141, 178);   
+}
+
+.social-media-buttons{
+    display: flex;
+    gap: 18px;
+}
+.social-media-buttons a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.6rem;
+    text-decoration: none;
+    color: #fff;
+    
+}
+
+/* Estilo para o botão do WhatsApp */
+.social-media-buttons a .fa-whatsapp {
+    background-color: #23af56; /* Cor de fundo verde do WhatsApp */
+    padding: 12px 15px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px 2px rgba(146, 115, 128, 0.7);
+
+}
+
+/* Estilo para o botão do Instagram */
+.social-media-buttons a .fa-instagram {
+    background: linear-gradient(45deg, #f58529, #d6249f, #8134af); /* Degradê do Instagram */
+    padding: 12px 15px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px 2px rgba(146, 115, 128, 0.7);
+
+}
+
+/* Estilo para o botão do TikTok */
+.social-media-buttons a .fa-tiktok {
+    background-color: #000000; /* Fundo preto do TikTok */
+    padding: 12px 15px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px 2px rgba(146, 115, 128, 0.7);
+
+}
+
+
+/* Efeito hover para o WhatsApp */
+.social-media-buttons a .fa-whatsapp:hover {
+    background-color: #89c591; /* Cor mais escura para o hover */
+    transform: scale(1.1); /* Aumenta o ícone ao passar o mouse */
+}
+
+
+/* Efeito hover para o Instagram */
+.social-media-buttons a .fa-instagram:hover {
+    background: linear-gradient(45deg, #dfb14e, #d8599f, #a45fc9); /* Mudança suave no degradê */
+    transform: scale(1.1); /* Aumenta o ícone ao passar o mouse */
+}
+
+/* Efeito hover para o TikTok */
+.social-media-buttons a .fa-tiktok:hover {
+    background-color: #464444; /* Cor mais clara no fundo preto */
+    transform: scale(1.1); /* Aumenta o ícone ao passar o mouse */
+}
+

@@ -1,0 +1,98 @@
+header {
+    width: 100%;
+    padding: 25px 8%;
+}
+
+#navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#navbar img{
+    width: 150px;
+}
+#nav_logo {
+    color: rgb(224, 76, 133);
+}
+
+#nav_list {
+    display: flex;
+    list-style: none;
+    gap: 48px;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: #444;
+    font-weight: 600;
+    position: relative; /* Necessário para o pseudo-elemento da linha */
+    padding-bottom: 5px; /* Espaço para a linha */
+    transition: color 0.3s ease; /* Transição suave da cor */
+}
+
+/* Efeito hover para mudar a cor e mostrar a linha */
+.nav-item a::after {
+    content: ''; /* Cria um pseudo-elemento vazio */
+    position: absolute;
+    bottom: 0;
+    right: 0; /* Alinha a linha à direita */
+    width: 100%;
+    height: 2px; /* Espessura da linha */
+    background-color: transparent; /* Começa invisível */
+    transform-origin: right; /* Define a origem da transformação para a direita */
+    transform: scaleX(0); /* Começa com a linha invisível */
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Transições para o efeito */
+}
+
+/* Quando o hover acontece, a cor muda e a linha cresce da direita */
+.nav-item a:hover {
+    color: rgb(224, 76, 133); /* Muda a cor do texto */
+}
+
+.nav-item a:hover::after {
+    background-color: rgb(224, 76, 133); /* A linha aparece com a cor desejada */
+    transform: scaleX(1); /* A linha se expande para a largura total */
+}
+
+#mobile_btn{
+    display: none;
+}
+
+#mobile_menu{
+    display: none;
+}
+
+@media  screen and (max-width: 1170px) {
+    #nav_list,
+    #navbar .btn-default{
+        display: none;
+    }
+    #mobile_btn{
+        display: block;
+        border: none;
+        background-color: transparent;
+        color: rgb(224, 76, 133);;
+        font-size: 1.7rem;
+        cursor: pointer;
+    }
+    
+    #mobile_menu.active{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #mobile_nav_list{
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        margin: 12px 0;
+
+    }
+    #mobile_nav_list .nav-item{
+        list-style: none;
+        text-align: center;
+    
+    }
+}

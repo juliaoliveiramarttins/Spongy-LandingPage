@@ -1,0 +1,134 @@
+#home {
+    margin-top: 10px;
+    display: flex;
+    position: relative;
+    max-height: calc(100vh - 94px);
+    padding-bottom: 60px;
+}
+
+section{
+    padding:20px 8%;
+}
+
+#cta {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    margin-top: 35px;
+}
+
+#cta .title {
+    font-size: 3.39rem;
+    color: #444;
+}
+
+#cta .title span {
+    color: rgb(224, 76, 133);
+}
+
+#cta .description {
+    font-size: 1.2rem;
+}
+
+#cta_buttons {
+    display: flex;
+    gap: 24px;
+}
+
+#cta_buttons a {
+    text-decoration: none;
+    color: #fff;
+}
+
+#cta_buttons .phone-text {
+    color: #111;
+    border-radius: 65px;
+}
+
+.sponge img {
+    width: 380px;
+}
+
+.sponges-banner img {
+    max-width: 900px;
+    position: absolute;
+    z-index: -1;
+}
+
+#phone_button {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    background-color: #fff;
+    padding: 8px 14px;
+    font-weight: 500;
+    box-shadow: 0 0 10px 2px rgba(146, 115, 128, 0.7);
+    border-radius: 12px;
+    color: rgb(224, 76, 133);
+}
+
+#banner {
+    display: flex;
+    align-items: start;
+    justify-content: end;
+    width: 70%;
+    z-index: 2;
+}
+
+#banner img {
+    height: 95.7%;
+    width: fit-content;
+}
+
+.shape {
+    background-color: rgb(221, 133, 167);
+    width: 45%;
+    height: 89%;
+    position: absolute;
+    border-radius: 65% 40% 0% 16%;
+    top: 0;
+    right: 160px;
+    z-index: 1;
+}
+
+/* Media Query para telas menores (desktop médio) */
+@media screen and (max-width: 1170px) {
+    #home {
+        min-height: 100%;
+        padding-top: 0px;
+    }
+
+    #home img {
+        width: 250px;
+    }
+
+    #banner,
+    #banner img,
+    #home .shape {
+        display: none;
+    }
+
+    #cta {
+        width: 100%;
+        text-align: center;
+        align-items: center;
+    }
+
+    #cta .title {
+        font-size: 2rem;
+    }
+
+    #cta .description {
+        font-size: 1rem;
+    }
+
+    #cta_buttons {
+        display: flex;
+        flex-direction: column;
+    }
+
+    section {
+        padding: 15px;
+    }
+}
