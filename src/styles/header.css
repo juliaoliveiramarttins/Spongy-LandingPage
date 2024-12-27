@@ -1,6 +1,14 @@
 header {
     width: 100%;
     padding: 25px 8%;
+    position: fixed; /* Fixa o elemento */
+    top: 0; /* Coloca o header no topo */
+    left: 0; /* Garante que o header fique alinhado à esquerda */
+    background: linear-gradient(135deg, #F5F5DC, #F5F5DC,#FFD3E7);
+    color: white; /* Cor do texto */
+    z-index: 1000; /* Garante que o header fique acima de outros elementos */
+    box-shadow: 2px 2px 15px 3px rgba(136, 101, 115, 0.3);
+
 }
 
 #navbar {

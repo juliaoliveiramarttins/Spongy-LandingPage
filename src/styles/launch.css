@@ -1,250 +1,156 @@
-@import url('https://pro.fontawesome.com/releases/v6.0.0-beta1/css/all.css');
-
-/* Definindo as variáveis de cor e tamanho para facilitar o uso */
-:root {
-  --accent-color: #E04C85;
-  --card-background-color: #ffffff;
-  --card-text-color: #0F0F0F;
-  --card-border-radius: 1rem;
-  --card-padding-block: 1.5rem;
-  --card-padding-inline: 1rem;
-  --outset-size: 0.75rem;
-  --outset-background-color: #f5c2d2;
-  --number-font-size: 1.5rem;
-  --number-overlap: 0.5rem;
-  --hover-background-color: #f1dcff;
-  --icon-size: 2rem;
+/* Estilo para a seção do produto */
+#newproducts {
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-/* Estilo para a seção de produtos */
-#newproducts section {
+.specifications-list {
+  background-color: #fcfbea; /* Fundo branco para o card */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombras para dar um efeito de elevação */
+  border-radius: 12px; /* Bordas arredondadas */
+  padding: 30px;
+  width: 100%;
+  max-width: 800px;
+  text-align: center;
+}
+
+#ol-img {
+  margin-bottom: 20px;
+}
+
+#info-img h2 {
+  color: #E04C85; /* Rosa para o título */
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+/* Estilo para o preço do produto */
+.product-price {
+  color: #000000; /* Cor do preço */
+  font-size: 1.6rem; /* Tamanho de fonte maior para destacar */
+  font-weight: bold; /* Deixa o preço em negrito */
+  margin-top: 10px; /* Adiciona um pequeno espaço acima do preço */
+  text-align: center; /* Centraliza o preço abaixo do título */
+}
+
+.product-img {
+  width: 100%;
+  max-width: 250px;
+  margin: 20px auto;
+  display: block;
+  transition: transform 0.3s ease, opacity 0.3s ease; /* Transição suave para o zoom e opacidade */
+}
+
+/* Efeito de hover na imagem */
+.product-img:hover {
+  transform: scale(1.1); /* Aplica um leve zoom */
+  opacity: 0.8; /* Diminui a opacidade para criar o efeito de destaque */
+}
+
+.launch-btn {
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: flex;
+}
+
+.btn-side{
+  display: flex;
+  justify-content: right;
+  margin-top: 25px;
+}
+
+/* Estilos para a lista de especificações */
+ol {
+  list-style-type: none;
   padding: 0;
 }
 
-/* Centralizar a imagem dentro de um contêiner */
-#ol-img {
+.spec-item {
   display: flex;
-  justify-content: center;
-  flex-direction: column;
   align-items: center;
-  width: 100%;
-  padding: 20px 0;
-} 
-
-#ol-img img {
-  margin-top: 20px;
-  max-width: 100%;
-  height: auto;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  justify-content: start;
+  padding: 10px 0; /* Reduzido o padding entre os itens */
+  border-bottom: 1px solid #f0f0f0; /* Linha de separação suave */
+  gap: 12px; /* Ajustado o gap entre os itens */
 }
 
-#ol-img img:hover{
-  transform: scale(1.1);  /* Aumenta o tamanho em 10% */
-  background-color: rgb(248, 76, 150,0.3);
-  border-radius: 20px;
-  
+.spec-item:last-child {
+  border-bottom: none; /* Remove a linha do último item */
 }
 
-#info-img{
-  padding: 10px 50px;
-  border-radius: 40px;
-  margin-top: 55px;
-  align-items: center;
+.spec-item .icon {
+  font-size: 22px;
+  color: #E04C85; /* Rosa para os ícones */
+  margin-right: 10px; /* Reduzido o espaço entre o ícone e o texto */
+}
+
+.spec-item .title2 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333333; /* Cor do texto em cinza escuro */
+  margin: 0; /* Removido o margin para alinhamento mais preciso */
+  flex-shrink: 0; /* Impede que o título encolha */
+}
+
+.spec-item .descr {
+  font-size: 14px;
+  color: #616161; /* Cor mais clara para a descrição */
+  margin: 0; /* Removido o margin para alinhamento mais preciso */
+  line-height: 1.4; /* Aumenta a altura da linha para melhorar a leitura */
+  flex: 1; /* Faz a descrição ocupar o espaço restante */
+  margin-left: 5px; /* Pequeno espaço à esquerda da descrição */
+  margin-top: 5px;
   display: flex;
-  justify-content:center ;
-  flex-direction: column;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-#info-img h2{
-  font-size: 2.1rem;
-  color: #272727;
-}
-
-#info-img h2:hover{
-  color: #d82167;
-}
-
-#info-img:hover{
-  transform: scale(1.1);  /* Aumenta o tamanho em 10% */
-}
-/* Forma de fundo que aparece atrás da lista */
-.shape2 {
-  background-image: url("/src/images/estrelas.png");
-  width: 30%;
-  height: 80%;
-  position: absolute;
-  top: 850px;
-  right: 670px;
-  z-index: -1;
-}
-.btn-default.launch-btn{
-  margin-top: 30px;
-  padding: 15px 40px;
-  font-size: 1.3rem;
-}
-
-.btn-default:hover{
-  /* background-color: rgb(201, 136, 161);*/
-  background-color: rgb(248, 76, 150);   
-}
-/* Estilo para a lista ordenada */
-ol {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
-  gap: 3rem;
-  width: 100%;
-  max-width: 1200px;
-  margin-inline: auto;
-  padding-block: 1rem;
-  list-style: none;
-}
-
-/* Estilo para os itens da lista (cards) */
-ol > li {
-  margin: var(--outset-size);
-  padding-block: var(--card-padding-block);
-  padding-inline: var(--card-padding-inline);
-  border-radius: var(--card-border-radius);
-  color: var(--card-text-color);
-  background-color: var(--card-background-color);
-  box-shadow: 
-    inset 1px 1px 0px rgb(255 255 255 / .5),
-    inset -1px -1px 0px rgb(0 0 0 / .25),
-    calc(var(--outset-size) * .25) calc(var(--outset-size) * .25) calc(var(--outset-size) * .5) rgb(0 0 0 / .25);
-  position: relative;
-  transition: transform 0.3s ease; /* Adiciona transição suave */}
-
-ol > li:hover {
-  background-color: var(--hover-background-color);
-  
-}
-
-/* Estilo para os números (removido a numeração) */
-ol > li::after {
-  content: "";
-  position: absolute;
-  bottom: calc(100% - var(--number-overlap));
-  left: 50%;
-  transform: translateX(-50%);
-  color: #8b0044;
-  font-weight: bold;
-  font-size: var(--number-font-size);
-  line-height: 1;
-  z-index: -1;
-  
-}
-
-/* Estilo para o fundo do card */
-ol > li::before {
-  content: "";
-  position: absolute;
-  width: calc(100% + (var(--outset-size) * 2));
-  height: 100%;
-  bottom: calc(var(--outset-size) * -1);
-  left: calc(var(--outset-size) * -1);
-  z-index: -1;
-  border-radius: calc(var(--card-border-radius) + var(--outset-size));
-  background-color: var(--outset-background-color);
-  background-image: 
-    linear-gradient(to left, var(--outset-background-color) calc(var(--outset-size) * 2), transparent 0),
-    linear-gradient(135deg, var(--accent-color) 80%, var(--outset-background-color) 0);
-}
-
-/* Estilo para o conteúdo do card */
-.icon {
-  font-size: var(--icon-size);
-  text-align: center;
-  margin-bottom: calc(var(--card-padding-block) * .5);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-
-
-}
-
-.icon:hover{
-  transform: scale(1.1);  /* Aumenta o tamanho em 10% */
-}
-
-.title2 {
-  text-transform: uppercase;
-  text-align: center;
-  font-weight: bold;
-  color: var(--accent-color);
-}
-
-.descr {
-  color: #555;
-  font-size: 15px;
-  text-align: center;
-}
-
-/* Responsividade para telas médias e pequenas */
-@media screen and (max-width: 1200px) {
-  
-  ol {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Ajusta a grid para ser mais flexível */
+@media (max-width: 768px) {
+  .spec-item {
+    flex-direction: column; /* Torna os itens da especificação empilhados verticalmente */
+    align-items: flex-start; /* Alinha os itens à esquerda */
+    padding: 15px 0;
   }
 
-  ol > li {
-    padding: 1rem; /* Diminui o padding nos cards para telas menores */
-  }
-  .shape2 {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  ol {
-    grid-template-columns: 1fr; /* Faz com que os cards fiquem em uma coluna */
+  .spec-item .icon {
+    margin-bottom: 5px; /* Dá um pequeno espaço abaixo do ícone */
   }
 
-  ol > li {
-    padding: 0.5rem; /* Menor padding nos cards */
+  .spec-item .title2 {
+    font-size: 16px; /* Ajusta o tamanho do título para telas pequenas */
   }
 
-  .title2 {
-    font-size: 1.3rem; /* Reduz o tamanho da fonte para telas menores */
+  .spec-item .descr {
+    font-size: 14px; /* Ajusta o tamanho da descrição */
+    margin-left: 0; /* Remove o margin à esquerda */
+    margin-top: 5px;
+    text-align: left; /* Alinha a descrição à esquerda em telas pequenas */
   }
 
-  .descr {
-    font-size: 0.85rem; /* Reduz o tamanho da fonte da descrição */
+  #info-img h2 {
+    font-size: 1.5rem; /* Ajusta o tamanho do título na versão mobile */
+    margin-bottom: 10px;
   }
 
-  .icon {
-    font-size: 1.5rem; /* Diminui o tamanho do ícone em telas menores */
+  .product-price {
+    font-size: 1.4rem; /* Reduz o tamanho da fonte do preço */
   }
-  .shape2 {
-    display: none;
+
+  .product-img {
+    max-width: 200px; /* Ajusta o tamanho da imagem */
+    margin: 10px auto; /* Ajusta a margem da imagem */
   }
-  #ol-img{
-    margin-top: -80px;
-  }
-}
 
-@media screen and (max-width: 450px) {
-
-
-
-#info-img h2{
-  font-size: 1.5rem;
-  margin-top: -20px;
-}
-
-#ol-img img{
-  width: 200px;
-}
-
-.btn-default.launch-btn{
-  font-size: 1.2rem;
-  padding: 12px 30px;
-
-}
-.shape2 {
-  display: none;
-}
-  ol > li {
-    padding: 0.5rem; /* Menor padding nos cards */
+  .btn-side{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
   }
 }
-
-
