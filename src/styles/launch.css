@@ -8,7 +8,7 @@
 }
 
 .specifications-list {
-  background-color: #fcfbea; /* Fundo branco para o card */
+  background-color: rgba(252, 251, 234, 0.6); /* Cor de fundo com opacidade reduzida */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombras para dar um efeito de elevação */
   border-radius: 12px; /* Bordas arredondadas */
   padding: 30px;
