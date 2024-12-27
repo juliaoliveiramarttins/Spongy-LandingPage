@@ -1,0 +1,81 @@
+/* Estilos gerais do footer */
+footer {
+    background-color: rgb(224, 76, 133); /* Cor de fundo escura */    
+    color: #fff; /* Cor do texto */
+    padding: 20px 40px; /* Espaçamento interno */
+    border-radius: 50px; /* Bordas arredondadas */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+    width: 100%;
+    max-width: 1250px;
+    margin: 0 auto;
+    margin-bottom:15px;
+
+}
+
+/* Contêiner de itens dentro do footer */
+#footer_items {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap; /* Permite que os itens se reorganizem em telas pequenas */
+}
+
+/* Estilo para o texto de copyright */
+#copyright {
+    font-size: 1rem;
+    color: #ececec;
+}
+
+/* Estilo para os ícones de redes sociais */
+.social-media-buttons {
+    display: flex;
+    gap: 20px;
+}
+
+/* Estilo para os links das redes sociais */
+.social-media-buttons a {
+    font-size: 1.4rem; /* Tamanho dos ícones reduzido */
+    color: #fff; /* Cor dos ícones */
+    background-color: #2d2f36; /* Cor de fundo escura para os ícones */
+    padding: 12px; /* Ajustado o padding para combinar com o tamanho reduzido */
+    border-radius: 50%; /* Bordas arredondadas */
+    transition: background-color 0.3s, transform 0.3s ease; /* Transição suave */
+}
+
+/* Efeito hover nos ícones das redes sociais */
+.social-media-buttons a:hover {
+    background-color: #25D366; /* Cor para o hover no WhatsApp */
+    transform: scale(1.1); /* Aumenta ligeiramente o ícone */
+}
+
+.social-media-buttons a:hover:nth-child(2) {
+    background-color: #E4405F; /* Cor para o hover no Instagram */
+}
+
+.social-media-buttons a:hover:nth-child(3) {
+    background-color: #c0c0c0; /* Cor para o hover no TikTok */
+}
+
+/* Estilos responsivos */
+@media screen and (max-width: 768px) {
+    footer {
+        flex-direction: column;
+        padding: 20px;
+        border-radius: 20px; /* Bordas arredondadas ainda visíveis */
+        margin-top: 25px;
+    }
+
+    #footer_items {
+        flex-direction: column;
+        text-align: center; /* Centraliza o conteúdo */
+    }
+
+    .social-media-buttons {
+        margin-top: 10px;
+    }
+}

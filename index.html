@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="src/styles/header.css">
     <link rel="stylesheet" href="src/styles/home.css">
     <link rel="stylesheet" href="src/styles/launch.css">
+    <link rel="stylesheet" href="src/styles/feedbacks.css">
+    <link rel="stylesheet" href="src/styles/footer.css">
 
     <title>Spongy</title>
 
@@ -40,11 +42,13 @@
             <button class="btn-default">
                 Comprar
             </button>
+            
 
             <button id="mobile_btn">
                 <i class="fa-solid fa-bars"></i>
             </button>
         </nav>
+        
 
         <div id="mobile_menu">
             <ul id="mobile_nav_list">
@@ -63,6 +67,7 @@
             </button>
         </div>
     </header>
+    
 
     <main id="content">
         <section id="home">
@@ -83,10 +88,7 @@
                 </p>
 
                 <div id="cta_buttons">
-                    <a href="" class="btn-default">
-                        Ver mais
-                    </a>
-
+                   
                     <a href="tel:+55555555" id="phone_button" class="phone-text">
                         <button class="btn-default">
                             <i class="fa-solid fa-phone"> </i>
@@ -108,47 +110,41 @@
                         <i class="fa-brands fa-tiktok"></i>
                     </a>
                 </div>
+                
             </div>
+            
 
 
             <div id="banner">
                 <div class="sponges-banner">
-                    <img src="src/images/esponjas-banner.png" alt="">
+                    <img src="src/images/esponjas-banner.png" alt="Esponjas" class="esponja-img">
                 </div>
-                <img src="src/images/mulher-banner.png" alt="mão segurando esponja">
+                <img src="src/images/mulher-banner.png" alt="Mão segurando esponja" class="mulher-img">
             </div>
+            
 
         </section>
-
+        
         <section id="newproducts">
             <div class="shape2"></div>
         
             <div class="specifications-list">
-
-                <!-- <ul>
-                                    <h2>Spongy ProBlend</h2>
-
-                    <li><strong>Suavidade:</strong> Toque suave na pele, proporcionando uma aplicação delicada.</li>
-                    <li><strong>Acabamento Perfeito:</strong> Resultados suaves, uniformes e de aspecto profissional.</li>
-                    <li><strong>Durabilidade:</strong> Material de alta qualidade para uso prolongado.</li>
-                    <li><strong>Versatilidade:</strong> Ideal para aplicar base, corretivo e outros produtos de maquiagem.</li>
-                    <li><strong>Fácil de Limpar:</strong> Prática de lavar e manter, garantindo uso repetido sem desgaste.</li>
-                </ul>
-            </div>!--> 
-
                
             <div id="ol-img">
-                
-                <img src="src/images/esponja-lancamento.png" alt="">
                 <div id="info-img">
-                <h2>Spongy - ProBlend</h2>
-                <p>R$ 12,99</p>
+                    <h2>Spongy - ProBlend</h2>
                 </div>
+
+                <img src="src/images/esponja-lancamento.png" alt="">
+
+                <button class="btn-default launch-btn" >Comprar</button>
+                
             </div>
             
             <ol>
                 
             <li style="--accent-color: #E04C85">
+                <div>
                 <div class="icon"><i class="fa-light fa-feather"></i></div>
                 <div class="title2">Suavidade</div>
                 <div class="descr"> Toque suave na pele, proporcionando uma aplicação delicada.</div>
@@ -170,12 +166,91 @@
             </li>
             </ol>
 
-            
         </section>
 
+        <section id="testimonials">
+            <img src="src/images/mulher-feedback.jpg" id="model" alt="">
 
+            <div id="testimonials_content">
+                
+                <h3 class="section-subtitle">
+                    Veja o que os clientes pensam de nós
+                </h3>
+
+                <div id="feedbacks">
+                    <div class="feedback">
+                        <img src="src/images/fdb-pessoa1.jpg" class="feedback-avatar" alt="">
+
+                        <div class="feedback-content">
+                            <p>
+                                <strong> Maria Andrade</strong>
+                                <span>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </span>
+                            </p>
+                            <p>
+                                "A esponja é super suave e deixa um acabamento perfeito! Fácil de lavar e dura bastante, estou adorando!"
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="feedback">
+                        <img src="src/images/fdb-pessoa2.jpg" class="feedback-avatar" alt="">
+
+                        <div class="feedback-content">
+                            <p>
+                                <strong> Ana Santos</strong>
+                                <span>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </span>
+                            </p>
+                            <p>
+                                "Sou maquiadora profissional e essa esponja é incrível! Ela proporciona um acabamento impecável, super suave e sem
+                                 marcas. Ideal para um efeito natural e uniforme."
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="btn-default">
+                    Ver mais avaliações
+                </button>
+            </div>
+        </section>
+        
     </main>
 
+    <footer>
+        <div id="footer_items">
+            <span id="copyright">
+                &copy 2024 Spongy - by Júlia Martins
+            </span>
+    
+            <div class="social-media-buttons">
+                <a href="">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+    
+                <a href="">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+    
+                <a href="">
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+    
     <script src="src/javascript/scripts.js"></script>
 </body>
+
 </html>

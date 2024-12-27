@@ -23,7 +23,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgb(224, 76, 133);
+    background-color: rgb(0, 0, 0);
     color: white;
     border-radius: 65px;
     padding: 12px 20px;
@@ -35,7 +35,7 @@ body{
 
 .btn-default:hover{
    /* background-color: rgb(201, 136, 161);*/
-   background-color: rgb(226, 141, 178);   
+   background-color: rgb(224, 76, 133);   
 }
 
 .social-media-buttons{
@@ -79,23 +79,4 @@ body{
 
 }
 
-
-/* Efeito hover para o WhatsApp */
-.social-media-buttons a .fa-whatsapp:hover {
-    background-color: #89c591; /* Cor mais escura para o hover */
-    transform: scale(1.1); /* Aumenta o ícone ao passar o mouse */
-}
-
-
-/* Efeito hover para o Instagram */
-.social-media-buttons a .fa-instagram:hover {
-    background: linear-gradient(45deg, #dfb14e, #d8599f, #a45fc9); /* Mudança suave no degradê */
-    transform: scale(1.1); /* Aumenta o ícone ao passar o mouse */
-}
-
-/* Efeito hover para o TikTok */
-.social-media-buttons a .fa-tiktok:hover {
-    background-color: #464444; /* Cor mais clara no fundo preto */
-    transform: scale(1.1); /* Aumenta o ícone ao passar o mouse */
-}
 
