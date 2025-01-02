@@ -8,7 +8,6 @@ header {
     color: white;
     z-index: 1000; /* garantir que o header fique acima de outros elementos */
     box-shadow: 2px 2px 15px 3px rgba(136, 101, 115, 0.3);
-
 }
 
 #navbar {
@@ -17,9 +16,11 @@ header {
     align-items: center;
     justify-content: space-between;
 }
+
 #navbar img{
     width: 150px;
 }
+
 #nav_logo {
     color: rgb(224, 76, 133);
 }
@@ -70,6 +71,11 @@ header {
 #mobile_menu{
     display: none;
 }
+
+#mobile_menu.active {
+    display: block; /* Exibe o menu quando tiver a classe 'active' */
+}
+
 
 @media  screen and (max-width: 1170px) {
     #nav_list,
