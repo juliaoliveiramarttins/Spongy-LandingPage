@@ -1,20 +1,22 @@
-/* Estilo para a seção do produto */
+/*seção do produto */
 #newproducts {
   padding: 40px 20px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin-top: 70px;
 }
 
 .specifications-list {
-  background-color: rgba(252, 251, 234, 0.6); /* Cor de fundo com opacidade reduzida */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombras para dar um efeito de elevação */
-  border-radius: 12px; /* Bordas arredondadas */
+  background-color: rgba(252, 251, 234, 0.6); 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 50px; 
   padding: 30px;
   width: 100%;
   max-width: 800px;
   text-align: center;
+  
 }
 
 #ol-img {
@@ -22,18 +24,20 @@
 }
 
 #info-img h2 {
-  color: #E04C85; /* Rosa para o título */
+  color: #E04C85; 
   font-size: 1.8rem;
-  margin-bottom: 15px;
+  margin-bottom: 12px;
+  margin-top: 12px;
+
 }
 
-/* Estilo para o preço do produto */
+
 .product-price {
-  color: #000000; /* Cor do preço */
-  font-size: 1.6rem; /* Tamanho de fonte maior para destacar */
-  font-weight: bold; /* Deixa o preço em negrito */
-  margin-top: 10px; /* Adiciona um pequeno espaço acima do preço */
-  text-align: center; /* Centraliza o preço abaixo do título */
+  color: #000000;
+  font-size: 1.6rem; 
+  font-weight: bold; 
+  margin-top: 10px;
+  text-align: center; 
 }
 
 .product-img {
@@ -44,7 +48,7 @@
   transition: transform 0.3s ease, opacity 0.3s ease; /* Transição suave para o zoom e opacidade */
 }
 
-/* Efeito de hover na imagem */
+/*hover na imagem */
 .product-img:hover {
   transform: scale(1.1); /* Aplica um leve zoom */
   opacity: 0.8; /* Diminui a opacidade para criar o efeito de destaque */
@@ -77,9 +81,9 @@ ol {
   display: flex;
   align-items: center;
   justify-content: start;
-  padding: 10px 0; /* Reduzido o padding entre os itens */
-  border-bottom: 1px solid #f0f0f0; /* Linha de separação suave */
-  gap: 12px; /* Ajustado o gap entre os itens */
+  padding: 10px 0; 
+  border-bottom: 1px solid #f5cfe0; /* linha de separação  */
+  gap: 12px;
 }
 
 .spec-item:last-child {
@@ -88,63 +92,66 @@ ol {
 
 .spec-item .icon {
   font-size: 22px;
-  color: #E04C85; /* Rosa para os ícones */
-  margin-right: 10px; /* Reduzido o espaço entre o ícone e o texto */
+  color: #E04C85; 
+  margin-right: 10px; 
 }
 
 .spec-item .title2 {
   font-size: 18px;
   font-weight: bold;
-  color: #333333; /* Cor do texto em cinza escuro */
-  margin: 0; /* Removido o margin para alinhamento mais preciso */
-  flex-shrink: 0; /* Impede que o título encolha */
+  color: #333333; 
+  margin: 0; 
+  flex-shrink: 0; /
 }
 
 .spec-item .descr {
   font-size: 14px;
-  color: #616161; /* Cor mais clara para a descrição */
-  margin: 0; /* Removido o margin para alinhamento mais preciso */
-  line-height: 1.4; /* Aumenta a altura da linha para melhorar a leitura */
-  flex: 1; /* Faz a descrição ocupar o espaço restante */
-  margin-left: 5px; /* Pequeno espaço à esquerda da descrição */
+  color: #616161; 
+  margin: 0; /* margin 0 para alinhamento mais preciso */
+  line-height: 1.4; /* aumenta a altura da linha para melhorar a leitura */
+  flex: 1; /* faz  com que a descrição ocupe o espaço restante */
+  margin-left: 5px;
   margin-top: 5px;
   display: flex;
 }
 
+
+
 @media (max-width: 768px) {
   .spec-item {
-    flex-direction: column; /* Torna os itens da especificação empilhados verticalmente */
-    align-items: flex-start; /* Alinha os itens à esquerda */
-    padding: 15px 0;
+    flex-direction: column; 
+    align-items: flex-start;
+    padding: 5px 0;
+    gap: 2px;
   }
 
   .spec-item .icon {
-    margin-bottom: 5px; /* Dá um pequeno espaço abaixo do ícone */
+    margin-bottom: 5px; 
   }
 
   .spec-item .title2 {
-    font-size: 16px; /* Ajusta o tamanho do título para telas pequenas */
+    font-size: 16px; 
   }
 
   .spec-item .descr {
-    font-size: 14px; /* Ajusta o tamanho da descrição */
-    margin-left: 0; /* Remove o margin à esquerda */
+    font-size: 14px; 
+    margin-left: 0; 
     margin-top: 5px;
-    text-align: left; /* Alinha a descrição à esquerda em telas pequenas */
+    text-align: left;
   }
 
   #info-img h2 {
-    font-size: 1.5rem; /* Ajusta o tamanho do título na versão mobile */
+    font-size: 1.5rem; 
     margin-bottom: 10px;
   }
 
   .product-price {
-    font-size: 1.4rem; /* Reduz o tamanho da fonte do preço */
+    font-size: 1.4rem;
   }
 
   .product-img {
-    max-width: 200px; /* Ajusta o tamanho da imagem */
-    margin: 10px auto; /* Ajusta a margem da imagem */
+    max-width: 200px;
+    margin: 10px auto; 
   }
 
   .btn-side{

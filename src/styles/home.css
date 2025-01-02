@@ -6,8 +6,8 @@
     padding-bottom: 60px;
 }
 
-section{
-    padding:20px 8%;
+section {
+    padding: 20px 8%;
 }
 
 #cta {
@@ -19,8 +19,8 @@ section{
 }
 
 #cta .title {
-    font-size: 3.39rem;
-    color: #444;
+    font-size: 2.9rem;
+    color: #333;
 }
 
 #cta .title span {
@@ -46,45 +46,67 @@ section{
     border-radius: 65px;
 }
 
-.sponge img {
-    width: 380px;
-}
-
-#banner .sponges-banner img {
-    max-width: 900px;
-    position: absolute;
-    margin-top: -75px;
-    z-index: -1;
-    
-}
-
 #phone_button {
     display: flex;
     gap: 8px;
     align-items: center;
-    background-color:   #ffffff;
+    background-color: #ffffff;
     padding: 8px 14px;
     font-weight: 500;
     box-shadow: 0 0 10px 2px rgba(146, 115, 128, 0.7);
     border-radius: 12px;
 }
 
+.sponge1 img {
+    width: 300px;
+}
+
 #banner {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    margin-top: -110px;
+    margin-bottom: 60px;
+    padding-right: 20px;
     display: flex;
-    align-items: start;
-    justify-content: end;
-    width: 70%;
-    z-index: 2;
+    justify-content: flex-end;
+    align-items: center;
 }
 
-#banner .mulher-img {
-    height: 95.7%;
-    width: fit-content;
+.sponges-banner,
+.mulher-banner {
+    position: absolute;
+    bottom: 0;
+}
+
+.sponges-banner {
+    right: 0;
+    width: 72%;
+    height: auto;
+    z-index: -1;
     border-radius: 100%;
-    
-    
 }
 
+.sponge2 {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin-left: -30px;
+}
+
+.mulher-banner {
+    right: 0;
+    width: 75%;
+    height: auto;
+    z-index: 1;
+}
+
+.mulher {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 100%;
+}
 
 /* Media Query para telas menores (desktop médio) */
 @media screen and (max-width: 1170px) {
@@ -94,7 +116,7 @@ section{
     }
 
     #home img {
-        width: 250px;
+        width: 310px;
     }
 
     #banner,
@@ -111,11 +133,11 @@ section{
     }
 
     #cta .title {
-        font-size: 2rem;
+        font-size: 2.7rem;
     }
 
     #cta .description {
-        font-size: 1rem;
+        font-size: 1.3rem;
     }
 
     #cta_buttons {
@@ -127,3 +149,5 @@ section{
         padding: 15px;
     }
 }
+
+
