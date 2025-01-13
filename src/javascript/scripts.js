@@ -7,7 +7,7 @@ $(document).ready(function() {
 
     // Fechar o menu quando um item de navegação for clicado
     $('#mobile_nav_list .nav-item').on('click', function() {
-        $('#mobile_menu').removeClass('active');  // Remove a classe 'active' para esconder o menu
+        $('#mobile_menu').removeClass('active'); // Remove a classe 'active' para esconder o menu
         $('#mobile_btn').find('i').removeClass('fa-x');  // Restaura o ícone do menu para "fa-bars"
     });
 

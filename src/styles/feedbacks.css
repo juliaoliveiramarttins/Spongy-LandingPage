@@ -17,7 +17,6 @@
 #model:hover {
   transform: scale(1.05); /* Aumenta a imagem ao passar o mouse */
   box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.2);
-  background-color: #fffff2e0;
 
 }
 

@@ -16,8 +16,6 @@ body{
     background: linear-gradient(135deg, #F5F5DC, #FFD3E7);
 }
 
-
-
 .btn-default{
     border: none;
     display: flex;
@@ -47,8 +45,7 @@ body{
     justify-content: center;
     font-size: 1.6rem;
     text-decoration: none;
-    color: #fff;
-    
+    color: #fff;  
 }
 
 /* Estilo para o botão do WhatsApp */
@@ -57,7 +54,6 @@ body{
     padding: 12px 15px;
     border-radius: 50%;
     box-shadow: 0 0 10px 2px rgba(146, 115, 128, 0.7);
-
 }
 
 /* Estilo para o botão do Instagram */
@@ -66,7 +62,6 @@ body{
     padding: 12px 15px;
     border-radius: 50%;
     box-shadow: 0 0 10px 2px rgba(146, 115, 128, 0.7);
-
 }
 
 /* Estilo para o botão do TikTok */
@@ -75,7 +70,9 @@ body{
     padding: 12px 15px;
     border-radius: 50%;
     box-shadow: 0 0 10px 2px rgba(146, 115, 128, 0.7);
-
 }
 
-
+.break{
+    display: flex;
+    gap: 50px;
+}

@@ -10,16 +10,16 @@
 
     <link rel="icon" href="src/images/favicon.png" type="image/png">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
-        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
     <link rel="stylesheet" href="src/styles/styles.css">
     <link rel="stylesheet" href="src/styles/header.css">
     <link rel="stylesheet" href="src/styles/home.css">
     <link rel="stylesheet" href="src/styles/launch.css">
     <link rel="stylesheet" href="src/styles/feedbacks.css">
     <link rel="stylesheet" href="src/styles/footer.css">
+    <link rel="stylesheet" href="src/styles/card.css">
 
     <title>Spongy</title>
 
@@ -69,9 +69,8 @@
                 comprar
             </button>
         </div>
-        
-    </header>
 
+    </header>
 
     <main id="content">
         <section id="home">
@@ -83,7 +82,7 @@
                 </div>
 
                 <h1 class="title">
-                     A pele perfeita começa com a <span>esponja</span> ideal.
+                    A pele perfeita começa com a <span>esponja</span> ideal.
                 </h1>
 
                 <p class="description">
@@ -132,50 +131,51 @@
 
         </section>
 
-        <section id="newproducts">
-            <div class="shape2"></div>
-            <div class="specifications-list">
-                <div id="ol-img">
-                    <div id="info-img">
-                        <h2>Spongy - ProBlend</h2>
-                        
-                        <div class="product-price">R$ 14,90</div> <!-- Adiciona o preço aqui -->
-                    </div>
+        <section id="card">
 
-                    <img src="src/images/esponja-lancamento.png" alt="Esponja Lançamento" class="product-img">
-                </div>
-
-                <ol>
-                    <li class="spec-item">
-                        <div class="icon"><i class="fa-light fa-feather"></i></div>
-                        <div class="title2">Suavidade:</div>
-                        <div class="descr">Toque suave na pele, proporcionando uma aplicação delicada.</div>
-                    </li>
-                    <li class="spec-item">
-                        <div class="icon"><i class="fa-light fa-star"></i></div>
-                        <div class="title2">Acabamento Perfeito:</div>
-                        <div class="descr">Resultados suaves, uniformes e de aspecto profissional.</div>
-                    </li>
-                    <li class="spec-item">
-                        <div class="icon"><i class="fa-light fa-sync"></i></div>
-                        <div class="title2">Versatilidade:</div>
-                        <div class="descr">Ideal para aplicar base, corretivo e outros produtos de maquiagem.</div>
-                    </li>
-                    <li class="spec-item">
-                        <div class="icon"><i class="fa-light fa-shield-alt"></i></div>
-                        <div class="title2">Durabilidade:</div>
-                        <div class="descr">Prática de lavar e manter, garantindo uso repetido sem desgaste.</div>
-                    </li>
-                </ol>
-                <div class="btn-side">
-                    <button class="btn-default launch-btn">Comprar</button>
-                </div>
-            </div>
         </section>
 
+        <section id="newproducts">
 
+                <div class="shape2"></div>
+                
+                <div class="specifications-list">
+                    <div class="card">
 
-        <section id="testimonials">
+                        <div class="imgBox">
+                            <img src="src/images/esponja-lancamento.png" alt="mouse corsair" class="mouse">
+                        </div>
+    
+                        <div class="contentBox">
+                            <h3 id="spongy-name">Spongy</h2>
+                                <h3>Pro Blend</h3>
+                                <h2 class="price"> <small>R$</small>14,<small>90</small></h2>
+                                <a href="#" class="buy">Comprar</a>
+                        </div>
+    
+                    </div>
+                    <ol>
+                        <li class="spec-item">
+                            <div class="title2">Suavidade   <i class="fa-solid fa-leaf icon"></i></div>
+                            <div class="descr">Toque suave na pele, proporcionando uma aplicação delicada.</div>
+                        </li>
+                        <li class="spec-item">
+                            <div class="title2">Acabamento  <i class="fa-regular fa-sun icon"></i></div>
+                            <div class="descr">Resultados suaves e uniformes, efeito de pele com  aspecto profissional.</div>
+                        </li>
+                        <li class="spec-item">
+                            <div class="title2">Versatilidade   <i class="fa-solid fa-wand-sparkles icon "></i></div>
+                            <div class="descr">Ideal para aplicar base, corretivo e outros produtos de maquiagem.</div>
+                        </li>
+                        <li class="spec-item">
+                            <div class="title2">Durabilidade   <i class="fa-solid fa-shield-heart icon"></i></div>
+                            <div class="descr">Prática de lavar e manter, garantindo uso repetido sem desgaste.</div>
+                        </li>
+                    </ol>
+                </div>
+        </section>
+
+        <section id="testimonials" id="feedbacks">
             <img src="src/images/mulher-feedback.png" id="model" alt="">
 
             <div id="testimonials_content">
@@ -260,6 +260,7 @@
     </footer>
 
     <script src="src/javascript/scripts.js"></script>
+
 </body>
 
 </html>

@@ -4,19 +4,25 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+  flex-direction: row;
   margin-top: 70px;
+  justify-content: center;
+  align-items: center; /* Centraliza verticalmente */
 }
 
 .specifications-list {
-  background-color: rgba(252, 251, 234, 0.6); 
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: rgb(255, 252, 238);
+  margin-top: 15px;
   border-radius: 50px; 
   padding: 30px;
   width: 100%;
-  max-width: 800px;
+  max-width: 1020px;
   text-align: center;
-  
+  display: flex;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Ajuste da box-shadow */
+  align-items: center; /* Centraliza verticalmente */
+  gap: 30px;
+  border: 2px dashed #f8c8de;
 }
 
 #ol-img {
@@ -30,7 +36,6 @@
   margin-top: 12px;
 
 }
-
 
 .product-price {
   color: #000000;
@@ -79,11 +84,11 @@ ol {
 
 .spec-item {
   display: flex;
-  align-items: center;
-  justify-content: start;
+  align-items:flex-start;
   padding: 10px 0; 
-  border-bottom: 1px solid #f5cfe0; /* linha de separação  */
+  border-bottom: 2px dashed #f5cfe0; /* linha de separação  */
   gap: 12px;
+  flex-direction: column;
 }
 
 .spec-item:last-child {
@@ -92,12 +97,12 @@ ol {
 
 .spec-item .icon {
   font-size: 22px;
-  color: #E04C85; 
-  margin-right: 10px; 
+  color: #333; 
+  margin-left: 10px; 
 }
 
 .spec-item .title2 {
-  font-size: 18px;
+  font-size: 19px;
   font-weight: bold;
   color: #333333; 
   margin: 0; 
@@ -105,59 +110,58 @@ ol {
 }
 
 .spec-item .descr {
-  font-size: 14px;
+  font-size: 17px;
   color: #616161; 
   margin: 0; /* margin 0 para alinhamento mais preciso */
   line-height: 1.4; /* aumenta a altura da linha para melhorar a leitura */
-  flex: 1; /* faz  com que a descrição ocupe o espaço restante */
-  margin-left: 5px;
+  flex: 1; /* faz com que a descrição ocupe o espaço restante */
   margin-top: 5px;
   display: flex;
 }
 
 
 
+/* Responsivo: quando a tela for menor que 768px */
 @media (max-width: 768px) {
-  .spec-item {
-    flex-direction: column; 
-    align-items: flex-start;
-    padding: 5px 0;
-    gap: 2px;
+  /* Altere o layout do container para coluna em telas pequenas */
+  #newproducts {
+    flex-direction: column; /* Empilha os itens em telas pequenas */
+    justify-content: left;
   }
 
-  .spec-item .icon {
-    margin-bottom: 5px; 
-  }
-
-  .spec-item .title2 {
-    font-size: 16px; 
-  }
-
-  .spec-item .descr {
-    font-size: 14px; 
-    margin-left: 0; 
-    margin-top: 5px;
+  /* Altere o layout da lista de especificações para coluna */
+  .specifications-list {
+    flex-direction: column; /* Empilha os itens em telas pequenas */
+    justify-content: left;
     text-align: left;
+    margin-top: 100px;
   }
 
-  #info-img h2 {
-    font-size: 1.5rem; 
-    margin-bottom: 10px;
-  }
-
-  .product-price {
-    font-size: 1.4rem;
-  }
-
+  /* Ajuste das imagens para serem responsivas */
   .product-img {
-    max-width: 200px;
-    margin: 10px auto; 
+    max-width: 100%;
+    margin: 20px 0;
   }
 
-  .btn-side{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 15px;
+  /* Ajuste do título */
+  #info-img h2 {
+    font-size: 1.6rem; /* Reduz o tamanho do título */
+  }
+
+  /* Ajustes no botão de lançamento */
+  .launch-btn {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+
+  /* Ajuste das especificações */
+  .spec-item {
+    flex-direction: column; /* Empilha o ícone e as descrições na coluna */
+    padding: 15px 0;
+  }
+
+  /* Ajuste da descrição */
+  .spec-item .descr {
+    margin-top: 5px;
   }
 }
