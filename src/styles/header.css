@@ -7,7 +7,7 @@ header {
     background: linear-gradient(135deg, #F5F5DC, #F5F5DC,#FFD3E7);
     color: white;
     z-index: 1000; /* garantir que o header fique acima de outros elementos */
-    box-shadow: 2px 2px 15px 3px rgba(136, 101, 115, 0.3);
+    box-shadow: 1px 1px 10px 1px rgba(161, 112, 132, 0.185);
 }
 
 #navbar {

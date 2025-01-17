@@ -16,4 +16,38 @@ $(document).ready(function() {
         $('#mobile_menu').removeClass('active');  // Fecha o menu quando o botão "comprar" é clicado
         $('#mobile_btn').find('i').removeClass('fa-x');  // Restaura o ícone do menu
     });
+
+    ScrollReveal().reveal('#cta', {
+        origin: 'right',
+        duration: 2000,
+        distance: '20%'
+    });
+
+    ScrollReveal().reveal('#banner', {
+        origin: 'right',
+        duration: 2000,
+        distance: '20%'
+    });
+
+    ScrollReveal().reveal('#newproducts', {
+        origin: 'left',
+        duration: 2500,
+        distance: '20%'
+    })
+    ScrollReveal().reveal('#model', {
+        origin: 'left',
+        duration: 1000,
+        distance: '20%'
+    })
+
+    ScrollReveal().reveal('.feedback', {
+        origin: 'right',
+        duration: 1000,
+        distance: '20%'
+    })
+    
 });
+
+
+
+

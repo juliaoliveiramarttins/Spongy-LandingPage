@@ -1,6 +1,6 @@
 /*seção do produto */
 #newproducts {
-  padding: 40px 20px;
+  padding: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -8,6 +8,7 @@
   margin-top: 70px;
   justify-content: center;
   align-items: center; /* Centraliza verticalmente */
+  
 }
 
 .specifications-list {
@@ -19,12 +20,15 @@
   max-width: 1020px;
   text-align: center;
   display: flex;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Ajuste da box-shadow */
+  box-shadow: 15px 15px 15px rgba(216, 49, 132, 0.1); /* Ajuste da box-shadow */
   align-items: center; /* Centraliza verticalmente */
   gap: 30px;
   border: 2px dashed #f8c8de;
 }
-
+.specifications-list:hover {
+  box-shadow: 20px 20px 25px 15px rgba(216, 49, 132, 0.3);
+  transition: box-shadow 0.3s ease-in-out;
+}
 #ol-img {
   margin-bottom: 20px;
 }
@@ -119,12 +123,19 @@ ol {
   display: flex;
 }
 
+.msg-effect {
+  display: flex;
+  margin-bottom: 30px;
+  font-size: 1.5em;
+  color: #E04C85;
+}
 
 
 /* Responsivo: quando a tela for menor que 768px */
 @media (max-width: 768px) {
   /* Altere o layout do container para coluna em telas pequenas */
   #newproducts {
+    
     flex-direction: column; /* Empilha os itens em telas pequenas */
     justify-content: left;
   }
@@ -164,3 +175,20 @@ ol {
     margin-top: 5px;
   }
 }
+
+
+
+@media screen and (width: 375px) and (height: 667px) {
+  /* Seu estilo específico para telas 375x667 */
+  #newproducts{
+    padding-top: 200px;
+  }
+}
+
+@media screen and (width: 360px) and (height: 740px) {
+  /* Seu estilo específico para telas 375x667 */
+  #newproducts{
+    padding-top: 120px;
+  }
+}
+

@@ -138,6 +138,7 @@ section {
 
     #cta .description {
         font-size: 1.3rem;
+        padding: 5px;
     }
 
     #cta_buttons {
@@ -146,7 +147,7 @@ section {
     }
 
     section {
-        padding: 15px;
+        padding: 0px  ;
     }
 }
 
