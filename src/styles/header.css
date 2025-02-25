@@ -1,6 +1,13 @@
 header {
     width: 100%;
     padding: 25px 8%;
+    position: fixed; /* header fixo */
+    top: 0; 
+    left: 0; 
+    background: linear-gradient(135deg, #F5F5DC, #F5F5DC,#FFD3E7);
+    color: white;
+    z-index: 1000; /* garantir que o header fique acima de outros elementos */
+    box-shadow: 1px 1px 10px 1px rgba(161, 112, 132, 0.185);
 }
 
 #navbar {
@@ -9,9 +16,11 @@ header {
     align-items: center;
     justify-content: space-between;
 }
+
 #navbar img{
     width: 150px;
 }
+
 #nav_logo {
     color: rgb(224, 76, 133);
 }
@@ -24,35 +33,35 @@ header {
 
 .nav-item a {
     text-decoration: none;
-    color: #444;
+    color: #222;
     font-weight: 600;
-    position: relative; /* Necessário para o pseudo-elemento da linha */
+    position: relative;
     padding-bottom: 5px; /* Espaço para a linha */
-    transition: color 0.3s ease; /* Transição suave da cor */
+    transition: color 0.3s ease; 
 }
 
 /* Efeito hover para mudar a cor e mostrar a linha */
 .nav-item a::after {
-    content: ''; /* Cria um pseudo-elemento vazio */
+    content: ''; /* cria um pseudo-elemento vazio */
     position: absolute;
     bottom: 0;
-    right: 0; /* Alinha a linha à direita */
+    right: 0; /* alinha a linha à direita */
     width: 100%;
-    height: 2px; /* Espessura da linha */
-    background-color: transparent; /* Começa invisível */
-    transform-origin: right; /* Define a origem da transformação para a direita */
-    transform: scaleX(0); /* Começa com a linha invisível */
-    transition: transform 0.3s ease, background-color 0.3s ease; /* Transições para o efeito */
+    height: 2px; /* espessura da linha */
+    background-color: transparent; /* começa invisível */
+    transform-origin: right; /* define a origem da transformação para a direita */
+    transform: scaleX(0); /* começa com a linha invisível */
+    transition: transform 0.3s ease, background-color 0.3s ease; /* transições para o efeito */
 }
 
-/* Quando o hover acontece, a cor muda e a linha cresce da direita */
+/* quando o hover ativa, a cor muda e a linha cresce da direita */
 .nav-item a:hover {
-    color: rgb(224, 76, 133); /* Muda a cor do texto */
+    color: rgb(224, 76, 133); 
 }
 
 .nav-item a:hover::after {
-    background-color: rgb(224, 76, 133); /* A linha aparece com a cor desejada */
-    transform: scaleX(1); /* A linha se expande para a largura total */
+    background-color: rgb(224, 76, 133); /* linha aparece com a cor desejada */
+    transform: scaleX(1); /* linha se expande para a largura total */
 }
 
 #mobile_btn{
@@ -62,6 +71,13 @@ header {
 #mobile_menu{
     display: none;
 }
+
+#mobile_menu.active {
+    display: block; /* Exibe o menu quando tiver a classe 'active' */
+}
+
+
+
 
 @media  screen and (max-width: 1170px) {
     #nav_list,
