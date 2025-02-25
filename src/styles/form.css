@@ -1,3 +1,8 @@
+:root {
+    --rosa-principal: rgb(224, 76, 133); /* Cor em formato RGB */
+    --first-text-color: #444;
+    --beige-principal: #fff7ea;
+  }
 /* Reset e Estilos Globais */
 * {
     margin: 0;
@@ -8,7 +13,7 @@
 body {
     font-family: 'Poppins', sans-serif;
     background: linear-gradient(135deg, #F5F5DC, #FFD3E7);
-    color: #333;
+    color: var(--first-text-color);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -18,7 +23,7 @@ body {
 
 /* Container Principal */
 .container {
-    background-color: #fffffd;
+    background-color: #fff;
     border-radius: 25px;
     padding: 25px;
     width: 90%;
@@ -31,19 +36,19 @@ h1 {
     text-align: center;
     font-size: 26px;
     margin-bottom: 15px;
-    color: #464646;
+    color: var(--first-text-color);
 }
 
 h2 {
     font-size: 22px;
     margin-bottom: 15px;
-    color: #E04C85;
+    color: var(--rosa-principal);
 }
 
 h3 {
     font-size: 18px;
     margin-bottom: 15px;
-    color: #464646;
+    color: var(--first-text-color);
     border-bottom: 1px solid #eee;
     padding-bottom: 5px;
 }
@@ -76,7 +81,7 @@ h3 {
 }
 
 #productName {
-    color: #E04C85;
+    color: var(--rosa-principal);
     font-size: 18px;
     margin-bottom: 5px;
 }
@@ -153,7 +158,7 @@ input, select {
 
 input:focus, 
 select:focus {
-    border: 2px solid #E04C85;
+    border: 2px solid var(--rosa-principal);
     outline: none;
 }
 
@@ -177,12 +182,12 @@ button {
 }
 
 .back-button {
-    background-color: #333;
+    background-color:var(--first-text-color);
     color: white;
 }
 
 .next-button {
-    background-color: #E04C85;
+    background-color: var(--rosa-principal);
     color: white;
 }
 
@@ -216,7 +221,7 @@ button a {
 }
 
 #finalTotal {
-    color: #E04C85;
+    color: black;
     font-size: 24px;
 }
 

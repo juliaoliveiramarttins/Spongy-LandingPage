@@ -22,7 +22,7 @@ header {
 }
 
 #nav_logo {
-    color: rgb(224, 76, 133);
+    color: (var(--rosa-principal));
 }
 
 #nav_list {
@@ -56,11 +56,11 @@ header {
 
 /* quando o hover ativa, a cor muda e a linha cresce da direita */
 .nav-item a:hover {
-    color: rgb(224, 76, 133); 
+    color: var(--rosa-principal); 
 }
 
 .nav-item a:hover::after {
-    background-color: rgb(224, 76, 133); /* linha aparece com a cor desejada */
+    background-color: var(--rosa-principal); /* linha aparece com a cor desejada */
     transform: scaleX(1); /* linha se expande para a largura total */
 }
 
@@ -86,7 +86,7 @@ header {
         display: block;
         border: none;
         background-color: transparent;
-        color: rgb(224, 76, 133);;
+        color: var(--rosa-principal);
         font-size: 1.7rem;
         cursor: pointer;
     }

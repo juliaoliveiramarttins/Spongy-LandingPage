@@ -1,5 +1,5 @@
 footer {
-    background-color: rgb(224, 76, 133);
+    background-color: var(--rosa-principal);
     color: #fff;
     padding: 20px 40px; /* Espaçamento interno */
     border-radius: 50px; 
@@ -26,7 +26,7 @@ footer {
 
 #copyright {
     font-size: 1rem;
-    color: #ececec;
+    color: #eee;
 }
 
 .social-media-buttons {

@@ -1,3 +1,4 @@
+
 #testimonials {
   min-height: calc(100vh - 91px);
   display: flex;
@@ -10,7 +11,7 @@
   width: 550px;
   height: auto;
   border-radius: 100%;
-  background-color: rgb(255, 255, 255);
+  background-color: #fff;
 }
 
 #testimonials .section-subtitle {
@@ -30,11 +31,11 @@
 }
 
 .feedback {
-  color: #ffffff;
+  color: #fff;
   display: flex;
   align-items: center;
   gap: 20px;
-  background-color: #000000;
+  background-color: black;
   padding: 12px;
   border-radius: 12px;
   box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
@@ -44,7 +45,7 @@
 .feedback:hover {
   transform: translateY(-5px); /* Levanta o item ao passar o mouse */
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Sombra mais forte ao passar o mouse */
-  background-color: #e06393;
+  background-color: var(--rosa-principal);
 }
 
 .feedback-avatar {
@@ -52,7 +53,7 @@
   height: 100px;
   border-radius: 100%;
   object-fit: cover;
-  border: 3px solid #fff7ea;
+  border: 3px solid var(--beige-principal);
 }
 
 .feedback-content p {

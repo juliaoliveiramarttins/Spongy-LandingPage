@@ -1,3 +1,8 @@
+:root {
+  --rosa-principal: rgb(224, 76, 133); /* Cor em formato RGB */
+  --first-text-color: #333;
+}
+
 /*seção do produto */
 #newproducts {
   padding: 20px;
@@ -34,7 +39,7 @@
 }
 
 #info-img h2 {
-  color: #E04C85; 
+  color: var(--rosa-principal); 
   font-size: 1.8rem;
   margin-bottom: 12px;
   margin-top: 12px;
@@ -42,7 +47,7 @@
 }
 
 .product-price {
-  color: #000000;
+  color: black;
   font-size: 1.6rem; 
   font-weight: bold; 
   margin-top: 10px;
@@ -64,7 +69,7 @@
 }
 
 .launch-btn {
-  color: white;
+  color: #fff;
   border: none;
   padding: 12px 25px;
   border-radius: 30px;
@@ -101,21 +106,21 @@ ol {
 
 .spec-item .icon {
   font-size: 22px;
-  color: #333; 
+  color: var(--); 
   margin-left: 10px; 
 }
 
 .spec-item .title2 {
   font-size: 19px;
   font-weight: bold;
-  color: #333333; 
+  color: var(--first-text-color); 
   margin: 0; 
   flex-shrink: 0; /
 }
 
 .spec-item .descr {
   font-size: 17px;
-  color: #616161; 
+  color: #555; 
   margin: 0; /* margin 0 para alinhamento mais preciso */
   line-height: 1.4; /* aumenta a altura da linha para melhorar a leitura */
   flex: 1; /* faz com que a descrição ocupe o espaço restante */
@@ -127,7 +132,7 @@ ol {
   display: flex;
   margin-bottom: 30px;
   font-size: 1.5em;
-  color: #E04C85;
+  color: var(--rosa-principal);
 }
 
 
