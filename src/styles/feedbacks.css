@@ -1,17 +1,18 @@
-
 #testimonials {
   min-height: calc(100vh - 91px);
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 48px; 
+  gap: 48px;
 }
 
 #model {
   width: 550px;
   height: auto;
   border-radius: 100%;
-  background-color: #fff;
+  background-color: var(--beige-principal);
+  box-shadow: rgb(119, 19, 60) 0px 5px 20px;
+  border: 5px solid var(--beige-principal);
 }
 
 #testimonials .section-subtitle {
@@ -39,13 +40,13 @@
   padding: 12px;
   border-radius: 12px;
   box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* transição suave */
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.5s ease; /* Transição mais suave para a cor de fundo */
 }
 
 .feedback:hover {
-  transform: translateY(-5px); /* Levanta o item ao passar o mouse */
-  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Sombra mais forte ao passar o mouse */
-  background-color: var(--rosa-principal);
+  transform: translateY(-3px); /* Levanta o item levemente */
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2); /* Sombra suave */
+  background-color: var(--rosa-principal); /* Cor de fundo ao passar o mouse */
 }
 
 .feedback-avatar {
@@ -54,6 +55,11 @@
   border-radius: 100%;
   object-fit: cover;
   border: 3px solid var(--beige-principal);
+  transition: transform 0.3s ease; /* Transição suave apenas para o tamanho */
+}
+
+.feedback:hover .feedback-avatar {
+  transform: scale(1.1); /* Aumenta ligeiramente o avatar */
 }
 
 .feedback-content p {
@@ -61,10 +67,20 @@
   justify-content: space-between;
   padding-left: 5px;
   padding-right: 10px;
+  transition: color 0.3s ease; /* Transição suave para o texto */
+}
+
+.feedback:hover .feedback-content p {
+  color: var(--beige-principal); /* Cor do texto ao passar o mouse */
 }
 
 .feedback-content p span {
   color: rgb(255, 208, 0);
+  transition: color 0.3s ease; /* Transição suave para o span */
+}
+
+.feedback:hover .feedback-content p span {
+  color: var(--beige-principal); /* Cor do span ao passar o mouse */
 }
 
 @media screen and (max-width: 1170px) {

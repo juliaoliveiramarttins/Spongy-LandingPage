@@ -3,17 +3,19 @@
   --first-text-color: #333;
 }
 
-/*seção do produto */
+/* Definindo uma margem fixa para o conteúdo anterior ou para o #newproducts */
 #newproducts {
+  margin-top: 30px; /* Margem fixa aumentada de 70px para 100px */
   padding: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  margin-top: 70px;
-  justify-content: center;
-  align-items: center; /* Centraliza verticalmente */
-  
+}
+
+/* Alternativa: se preferir definir no elemento anterior */
+.previous-section {
+  margin-bottom: 100px; /* Adicione esta classe ao elemento que vem antes */
 }
 
 .specifications-list {

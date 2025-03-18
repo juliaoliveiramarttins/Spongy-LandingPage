@@ -1,9 +1,9 @@
 #home {
-    margin-top: 90px;
+    margin-top: 60px;
     display: flex;
     position: relative;
-    max-height: calc(100vh - 92px);
     padding-bottom: 60px;
+    overflow: hidden; /* Prevents content from causing scroll */
 }
 
 section {
@@ -16,6 +16,7 @@ section {
     flex-direction: column;
     gap: 28px;
     margin-top: 35px;
+    position: relative; /* Ensures stability */
 }
 
 #cta .title {
@@ -58,58 +59,57 @@ section {
 }
 
 .sponge1 img {
+    margin-top: 24px;
     width: 300px;
+    height: auto;
+    object-fit: contain; /* Maintains aspect ratio */
 }
 
 #banner {
     position: relative;
     width: 100%;
-    height: 100vh;
-    margin-top: -110px;
-    margin-bottom: 60px;
-    padding-right: 20px;
+    min-height: 70vh; /* Altura mínima para garantir espaço */
     display: flex;
     justify-content: flex-end;
-    align-items: center;
+    align-items: flex-end; /* Alinha as imagens na parte inferior */
+    margin-top: 0; /* Remove a margem superior negativa */
+    margin-bottom: 60px;
+    padding-right: 20px;
+    padding-top: 80px; /* Adiciona espaço para evitar corte pelo header */
 }
 
-.sponges-banner,
-.mulher-banner {
-    position: absolute;
-    bottom: 0;
-}
 
 .sponges-banner {
+    position: absolute;
+    bottom: 0; /* Alinha as imagens na parte inferior */
     right: 0;
-    width: 72%;
-    height: auto;
+    height: auto; /* Mantém a proporção */
     z-index: -1;
-    border-radius: 100%;
+    max-width: 60%; /* Prevents growth */
+    min-width: 60%; /* Prevents shrinking */
 }
 
 .sponge2 {
     width: 100%;
     height: auto;
-    object-fit: cover;
-    margin-left: -30px;
+    object-fit: contain; /* Mantém a proporção da imagem */
+    margin-left: -70px;
+    animation: pulseAndRotate 8s ease-in-out infinite; /* Combina pulsação e rotação */
 }
 
-.mulher-banner {
-    right: 0;
-    width: 75%;
-    height: auto;
-    z-index: 1;
+/* Animação de pulsação e rotação infinita */
+@keyframes pulseAndRotate {
+    0%, 100% {
+        transform: scale(1) ; /* Tamanho reduzido e sem rotação */
+    }
+    50% {
+        transform: scale(1.1) ; /* Aumenta o tamanho e gira 180 graus */
+    }
+    
 }
 
-.mulher {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    border-radius: 100%;
-}
-
-/* Media Query para telas menores (desktop médio) */
-@media screen and (max-width: 1170px) {
+/* Media Query for smaller screens (medium desktop) */
+@media screen and (max-width: 1200px) {
     #home {
         min-height: 100%;
         padding-top: 0px;
@@ -121,7 +121,8 @@ section {
 
     #banner,
     #banner img,
-    #home .shape {
+    #home .shape,
+    .mulher {
         display: none;
     }
 
@@ -147,8 +148,6 @@ section {
     }
 
     section {
-        padding: 0px  ;
+        padding: 0px;
     }
 }
-
-
