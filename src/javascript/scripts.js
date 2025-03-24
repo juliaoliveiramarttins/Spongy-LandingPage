@@ -40,9 +40,9 @@ $(document).ready(function() {
         distance: '20%'
     })
 
-    ScrollReveal().reveal('.feedback', {
+    ScrollReveal().reveal('#testimonials', {
         origin: 'right',
-        duration: 1000,
+        duration: 1500,
         distance: '20%'
     })
     

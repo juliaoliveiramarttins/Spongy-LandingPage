@@ -1,7 +1,9 @@
+/* Adicione isso à seção Variáveis CSS ou no início do seu arquivo */
 :root {
-    --rosa-principal: rgb(224, 76, 133); /* Cor em formato RGB */
-    --first-text-color: #444;
-    --beige-principal: #fff7ea;
+    --rosa-principal: #E04C85;
+    --first-text-color: #333333;
+    --beige-principal: #fffdf1;
+
   }
 /* Reset e Estilos Globais */
 * {
@@ -21,9 +23,34 @@ body {
     padding: 20px;
 }
 
+ /* Estilos adicionais para o novo layout */
+ .cart-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border: 1px solid rgba(116, 77, 61, 0.438);
+    border-radius: 20px;
+}
+
+.product-column {
+    flex: 1;
+    padding: 20px;
+    background-color: #ffc8da98;
+    border-radius: 20px 0 0 20px;
+}
+
+.info-column {
+    flex: 2;
+    background-color: #fff;
+    border-radius: 20px;
+}
+
 /* Container Principal */
 .container {
-    background-color: #fff;
+    margin-top: 100px;
+    background-color: var(--beige-principal);
     border-radius: 25px;
     padding: 25px;
     width: 90%;
@@ -53,38 +80,50 @@ h3 {
     padding-bottom: 5px;
 }
 
-/* Seção de Produto */
+   
 #product {
     display: flex;
-    gap: 20px;
-    margin-bottom: 10px;
-    background-color: #f9f9f9;
-    padding: 15px;
-    border-radius: 15px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
-    
+    flex-direction: column;
+    align-items: center;
 }
 
 #product img {
-    width: 120px;
+    width: 220px;
     object-fit: cover;
     border-radius: 8px;
 }
 
+  
+#productImage {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+
+
 #product-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 15px;
+    gap: 30px;
     flex: 1;
     align-items: center;
     justify-content: space-around;
 }
+#product-container h2{
+    font-size: 22px;
+}
+#product-container p{
+    font-size: 18px;
+    text-align: center;
+}
 
 #productName {
-    color: var(--rosa-principal);
+    color: #000;
     font-size: 18px;
     margin-bottom: 5px;
 }
+
 
 #qtt-container {
     display: flex;
@@ -100,16 +139,15 @@ h3 {
 
 #total-container {
     font-weight: bold;
-    color: #52091f;
+    color: #000000;
 }
 
 /* Seções do Formulário */
 .form-section {
     margin-bottom: 10px;
     padding: 15px 15px 1px 15px;
-    background-color: #f9f9f9;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
-    border-radius: 15px;
+    background-color: #ffffff;
+    border-radius:20px;
 }
 
 .form-row {
@@ -162,15 +200,16 @@ select:focus {
     outline: none;
 }
 
-/* Botões */
-.button-container {
+  
+  /* Modifique a seção de botões para aumentar a especificidade */
+  .button-container {
     display: flex;
     justify-content: space-between;
     gap: 15px;
     margin-top: 20px;
-}
-
-button {
+  }
+  
+  .button-container button {
     padding: 10px 15px;
     border: none;
     border-radius: 8px;
@@ -179,36 +218,45 @@ button {
     font-weight: 600;
     transition: all 0.2s ease;
     flex: 1;
-}
-
-.back-button {
-    background-color:var(--first-text-color);
+  }
+  
+  .button-container .back-button {
+    background-color: var(--first-text-color);
     color: white;
-}
-
-.next-button {
+  }
+  
+  
+  .button-container .next-button {
     background-color: var(--rosa-principal);
     color: white;
-}
+  }
 
-.confirm-button {
+  .button-container .next-button:hover {
+    background-color: #4CAF50;
+  }
+  
+  .button-container .confirm-button {
     background-color: #4CAF50;
     color: white;
-}
+  }
 
-button:hover {
+  .button-container .confirm-button:hover{
+    background-color: #0d9412;
+    color: white;
+  }
+  
+  .button-container button:hover {
     opacity: 0.9;
     transform: translateY(-2px);
-}
-
-button a {
+  }
+  
+  .button-container button a {
     text-decoration: none;
     color: inherit;
     display: block;
     width: 100%;
     height: 100%;
-}
-
+  }
 /* Resumo da Compra */
 .summary-total {
     font-size: 20px;
@@ -274,3 +322,4 @@ button a {
         width: 100%;
     }
 }
+

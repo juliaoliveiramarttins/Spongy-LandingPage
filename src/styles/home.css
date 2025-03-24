@@ -1,27 +1,33 @@
+
 #home {
     margin-top: 60px;
-    display: flex;
     position: relative;
-    padding-bottom: 60px;
-    overflow: hidden; /* Prevents content from causing scroll */
+    overflow: hidden;
+    width: 100%;
 }
 
 section {
     padding: 20px 8%;
 }
 
+#home .container {
+    display: flex;
+    width: 100%;
+}
+
 #cta {
-    width: 35%;
+    width: 36%;
     display: flex;
     flex-direction: column;
     gap: 28px;
-    margin-top: 35px;
-    position: relative; /* Ensures stability */
+    margin-top: 80px;
+    position: relative;
+    z-index: 1; /* Garante que o conteúdo apareça acima da imagem */
 }
 
 #cta .title {
     font-size: 2.9rem;
-    color: var(--first-text-color);
+    color: #222;
 }
 
 #cta .title span {
@@ -62,92 +68,126 @@ section {
     margin-top: 24px;
     width: 300px;
     height: auto;
-    object-fit: contain; /* Maintains aspect ratio */
+    object-fit: contain;
 }
 
+.social-media-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-media-buttons a {
+    font-size: 1.5rem;
+    color: var(--rosa-principal);
+}
+
+/* Banner e imagem principal */
 #banner {
     position: relative;
-    width: 100%;
-    min-height: 70vh; /* Altura mínima para garantir espaço */
+    width: 60%;
     display: flex;
     justify-content: flex-end;
-    align-items: flex-end; /* Alinha as imagens na parte inferior */
-    margin-top: 0; /* Remove a margem superior negativa */
-    margin-bottom: 60px;
-    padding-right: 20px;
-    padding-top: 80px; /* Adiciona espaço para evitar corte pelo header */
-}
-
-
-.sponges-banner {
-    position: absolute;
-    bottom: 0; /* Alinha as imagens na parte inferior */
-    right: 0;
-    height: auto; /* Mantém a proporção */
-    z-index: -1;
-    max-width: 60%; /* Prevents growth */
-    min-width: 60%; /* Prevents shrinking */
+    align-items: center;
 }
 
 .sponge2 {
-    width: 100%;
+    width: 74%;
     height: auto;
-    object-fit: contain; /* Mantém a proporção da imagem */
-    margin-left: -70px;
-    animation: pulseAndRotate 8s ease-in-out infinite; /* Combina pulsação e rotação */
+    object-fit: contain;
+    animation: pulseAndRotate 8s ease-in-out infinite;
 }
 
-/* Animação de pulsação e rotação infinita */
+/* Animação de pulsação */
 @keyframes pulseAndRotate {
     0%, 100% {
-        transform: scale(1) ; /* Tamanho reduzido e sem rotação */
+        transform: scale(1);
     }
     50% {
-        transform: scale(1.1) ; /* Aumenta o tamanho e gira 180 graus */
+        transform: scale(1.07);
     }
-    
 }
 
-/* Media Query for smaller screens (medium desktop) */
+/* Media queries para diferentes tamanhos de tela */
+@media screen and (min-width: 1801px) {
+    /* Ajuste para telas grandes */
+    .sponge2 {
+        margin-top: 50px;
+    }
+}
+
+@media screen and (min-width: 1601px) and (max-width: 1800px) {
+    .sponge2 {
+        margin-top: -30px;
+    }
+}
+
+@media screen and (min-width: 1401px) and (max-width: 1600px) {
+    .sponge2 {
+        margin-top: -60px;
+    }
+}
+
+@media screen and (min-width: 1201px) and (max-width: 1400px) {
+    .sponge2 {
+        margin-top: -90px;
+    }
+}
+
+/* Media query para telas médias e pequenas */
 @media screen and (max-width: 1200px) {
-    #home {
-        min-height: 100%;
-        padding-top: 0px;
+    #home .container {
+        flex-direction: column;
     }
-
-    #home img {
-        width: 310px;
-    }
-
-    #banner,
-    #banner img,
-    #home .shape,
-    .mulher {
-        display: none;
-    }
-
+    
     #cta {
         width: 100%;
         text-align: center;
         align-items: center;
         padding: 5px;
     }
-
+    
+    #banner {
+        width: 100%;
+        justify-content: center;
+        margin-top: 20px;
+        display: none;
+    }
+    
+    .sponge2 {
+        width: 80%;
+        max-width: 500px;
+        margin-top: 0;
+    }
+    
     #cta .title {
-        font-size: 2.7rem;
+        font-size: 2.5rem;
     }
-
+    
     #cta .description {
-        font-size: 1.3rem;
-        padding: 5px;
+        font-size: 1.2rem;
+        padding: 0 10px;
     }
-
+    
     #cta_buttons {
-        display: flex;
         flex-direction: column;
     }
-
+    
     section {
-        padding: 0px;
+        padding: 10px 4%;
+    }
+}
+
+/* Para telas muito pequenas (smartphones) */
+@media screen and (max-width: 768px) {
+    #cta .title {
+        font-size: 2rem;
+    }
+    
+    .sponge1 img {
+        width: 250px;
+    }
+    
+    .sponge2 {
+        width: 90%;
     }
 }
