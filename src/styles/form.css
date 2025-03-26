@@ -36,6 +36,7 @@
     padding: 0;
     box-sizing: border-box;
     
+    
 }
 
 body {
@@ -341,6 +342,7 @@ a {
   
 
   .btn-default {
+    font-family: 'Poppins', sans-serif;
     border: none;
     display: flex;
     align-items: center;
@@ -557,7 +559,7 @@ a {
 @media (max-width: 768px) {
     .container {
         padding: var(--spacing-md);
-        width: 95%;
+        width: 100%;
     }
 
     .form-row {
@@ -585,10 +587,6 @@ a {
 
     .button-container {
         flex-direction: column;
-    }
-
-    button {
-        width: 100%;
     }
     
     h1 {
